@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .bg {
+      height: 200px;
+      background-color: indigo;
+    }
+
+    .card {
+      border: 2px solid indigo;
+      border-radius: 5px;
+      width: 400px;
+      margin: -152px auto 0;
+    }
+
+    .card-header {
+      background-image: url("./assets/images/background.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 150px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .card-header>h1,
+    .card-header>p {
+      text-align: center;
+      color: white;
+    }
+
+    .card-body {
+      padding: 25px;
+    }
+
+    .group {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .group>span {
+      background-color: indigo;
+      color: white;
+      padding: 5px;
+    }
+
+    .group>input {
+      flex-grow: 1;
+    }
+
+    .btn {
+      background-color: indigo;
+      width: 100%;
+      padding: 10px;
+      color: white;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="card">
+    <div class="card-header">
+      <h1>secure Login</h1>
+      <p>Powered By Skillhub.</p>
+    </div>
+
+    <div class="card-body">
+      <div class="group">
+        <span>usrename</span>
+        <input placeholder="Enter register email/number" type="">
+      </div>
+      <p>you can use your email/number</p>
+
+
+      <div class="group">
+        <span>class pin</span>
+        <input placeholder="Enter pin" type="">
+      </div>
+      <p>enter 4 digit pin</p>
+
+      <div class="group">
+        <span>password</span>
+        <input placeholder="Enter password" type="">
+      </div>
+      <p>forget password</p>
+      <button class="btn">login</button>
+</body>
+
+</html>
